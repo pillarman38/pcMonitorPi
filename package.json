@@ -1,13 +1,15 @@
 {
-  "name": "working-app-please",
+  "name": "working-app-please-pi",
   "version": "0.0.0",
+  "main": "client.js",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "client.js",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "start:electron": "ng build --base-href ./ && electron ."
   },
   "private": true,
   "dependencies": {
@@ -19,7 +21,12 @@
     "@angular/platform-browser": "~9.1.3",
     "@angular/platform-browser-dynamic": "~9.1.3",
     "@angular/router": "~9.1.3",
+    "angular": "^1.8.2",
+    "cors": "^2.8.5",
+    "electron": "^11.1.1",
     "rxjs": "~6.5.4",
+    "socket.io": "^3.0.5",
+    "socket.io-client": "^3.0.5",
     "tslib": "^1.10.0",
     "zone.js": "~0.10.2"
   },
